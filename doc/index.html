@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>万博2025 ショートカットリンク集</title>
+  <meta name="description" content="万博2025（大阪・関西万博）にこれから行く人・今日行く人のための公式・便利リンク集。チケット、交通、駐車場、公式アプリなどをスマホでも使いやすくまとめました。">
+  <meta name="keywords" content="万博2025,大阪万博,関西万博,EXPO2025,チケット,交通,駐車場,公式アプリ,ショートカット,リンク集">
+  <meta property="og:title" content="万博2025 ショートカットリンク集">
+  <meta property="og:description" content="万博2025（大阪・関西万博）にこれから行く人・今日行く人のための公式・便利リンク集。スマホでも使いやすいデザイン。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shortcut-expo2025.wakos.cc/">
+  <meta property="og:image" content="https://shortcut-expo2025.wakos.cc/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="万博2025 ショートカットリンク集">
+  <meta name="twitter:description" content="万博2025（大阪・関西万博）にこれから行く人・今日行く人のための公式・便利リンク集。">
+  <meta name="twitter:image" content="https://shortcut-expo2025.wakos.cc/ogp.png">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#0068B7">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="万博2025ショートカット">
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => {
+            console.log('ServiceWorker registration successful');
+          })
+          .catch(error => {
+            console.log('ServiceWorker registration failed: ', error);
+          });
+      });
+    }
+  </script>
+  <style>
+    :root {
+      /* 大阪万博公式カラーパレット */
+      --expo-red: #E60012; /* 公式レッド PANTONE 485C */
+      --expo-blue: #0068B7; /* 公式ブルー PANTONE 3005C */
+      --expo-gray: #D2D7DA; /* 公式グレー PANTONE COOL GRAY 2C */
+      --expo-white: #FFFFFF; /* 白 */
+      --expo-bg: var(--expo-white);
+      --expo-font: #222222;
+      --expo-gradient: linear-gradient(135deg, var(--expo-blue), #0084D6);
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background: var(--expo-bg);
+      color: var(--expo-font);
+      font-family: 'Noto Sans JP', 'Hiragino Sans', 'Meiryo', sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.6;
+    }
+    
+    header {
+      background: var(--expo-blue);
+      color: var(--expo-white);
+      width: 100%;
+      padding: 1.8rem 0 1.5rem 0;
+      text-align: center;
+      font-size: 1.7rem;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 12px rgba(0, 104, 183, 0.2);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--expo-red);
+    }
+    
+    main {
+      width: 100%;
+      max-width: 560px;
+      padding: 0 1.5rem 2.5rem 1.5rem;
+      box-sizing: border-box;
+    }
+    
+    section {
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+      overflow: hidden;
+      background: var(--expo-white);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    section:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    details {
+      width: 100%;
+    }
+    
+    summary {
+      padding: 1rem 1.5rem;
+      background-color: var(--expo-gray);
+      cursor: pointer;
+      position: relative;
+      list-style: none;
+      outline: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.2s ease;
+    }
+    
+    summary:hover {
+      background-color: #C4CCD0;
+    }
+    
+    summary::after {
+      content: "▼";
+      font-size: 0.8rem;
+      color: var(--expo-blue);
+      margin-left: 10px;
+      transition: transform 0.3s ease;
+    }
+    
+    details[open] summary::after {
+      transform: rotate(180deg);
+    }
+    
+    summary h2 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: var(--expo-blue);
+    }
+    
+    details ul {
+      list-style: none;
+      padding: 0.5rem 0;
+    }
+    
+    details li {
+      margin: 0;
+      border-bottom: 1px solid rgba(0, 104, 183, 0.1);
+    }
+    
+    details li:last-child {
+      border-bottom: none;
+    }
+    
+    details a {
+      display: block;
+      padding: 1.2rem 1.5rem;
+      color: var(--expo-font);
+      text-decoration: none;
+      transition: background-color 0.2s;
+      position: relative;
+    }
+    
+    details a:hover {
+      background-color: rgba(0, 104, 183, 0.05);
+    }
+    
+    details a::after {
+      content: "›";
+      position: absolute;
+      right: 1.5rem;
+      font-size: 1.5rem;
+      color: var(--expo-blue);
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    details h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+    
+    details p {
+      margin: 0;
+      padding: 0 1.5rem 1rem 3rem;
+      font-size: 0.9rem;
+      color: #666;
+      border-bottom: 1px solid rgba(0, 104, 183, 0.1);
+      position: relative;
+    }
+    
+    details p::before {
+      content: "メモ:";
+      font-weight: 500;
+      color: var(--expo-red);
+      margin-right: 0.3rem;
+    }
+    
+    details li:last-child p {
+      border-bottom: none;
+      padding-bottom: 1rem;
+    }
+    
+    .mascot-container {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0 2rem 0;
+      position: relative;
+    }
+    
+    .mascot-img {
+      width: 100px;
+      height: auto;
+      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    
+    .bubble {
+      position: absolute;
+      background: var(--expo-white);
+      border-radius: 20px;
+      padding: 0.8rem 1.2rem;
+      max-width: 200px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      top: 0;
+      left: 50%;
+      transform: translateX(20px);
+      font-size: 0.9rem;
+      color: var(--expo-font);
+      border-left: 3px solid var(--expo-blue);
+    }
+    
+    .bubble::after {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: 15px;
+      border-top: 8px solid transparent;
+      border-right: 10px solid var(--expo-white);
+      border-bottom: 8px solid transparent;
+    }
+    
+    footer {
+      margin-top: auto;
+      width: 100%;
+      background-color: var(--expo-gray);
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--expo-blue);
+      border-top: 1px solid rgba(0, 104, 183, 0.1);
+    }
+    
+    footer a {
+      color: var(--expo-blue);
+      text-decoration: none;
+    }
+    
+    footer a:hover {
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.3rem;
+        padding: 1.2rem 0 1rem 0;
+      }
+      
+      main {
+        max-width: 100%;
+        padding: 0 1rem 2rem 1rem;
+      }
+      
+      summary h2 {
+        font-size: 1.2rem;
+      }
+      
+      details h3 {
+        font-size: 1rem;
+      }
+      
+      details a {
+        padding: 1rem 1.2rem;
+      }
+      
+      details a::after {
+        right: 1rem;
+      }
+      
+      details p {
+        padding: 0 1.2rem 0.8rem 2.5rem;
+        font-size: 0.8rem;
+      }
+      
+      details p::before {
+        font-size: 0.8rem;
+      }
+      
+      .mascot-img {
+        width: 80px;
+      }
+      
+      .bubble {
+        max-width: 180px;
+        font-size: 0.8rem;
+        transform: translateX(10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    関西・大阪万博2025 ショートカット<br>
+  </header>
+  <main>
+    <section>
+      <details>
+        <summary><h2>当日</h2></summary>
+        <ul>
+          <li>
+              <a href="https://ticket.expo2025.or.jp/#ticket" target="_blank" rel="noopener">
+                <h3>チケット表示</h3>
+              </a>
+            </li>
+          <li>
+            <a href="https://ticket.expo2025.or.jp/reservation_information/" target="_blank" rel="noopener">
+              <h3>当日予約</h3>
+            </a>
+          </li>
+          <li>
+            <a href="https://parking-reserve.expo2025.or.jp/reserve/list/" target="_blank" rel="noopener">
+              <h3>駐車場のQR表示</h3>
+            </a>
+          </li>
+        </ul>
+  
+      </details>
+    </section>
+
+    <section>
+      <details>
+        <summary><h2>準備</h2></summary>
+        <ul>
+          <li>
+            <a href="https://www.expo2025.or.jp/visit/tickets/" target="_blank" rel="noopener">
+              <h3>チケット購入</h3>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.expo2025.or.jp/visit/access/" target="_blank" rel="noopener">
+              <h3>アクセス・交通情報</h3>
+            </a>
+          </li>
+          <li>
+            <a href="https://parking-reserve.expo2025.or.jp/" target="_blank" rel="noopener">
+              <h3>駐車場予約</h3>
+            </a>
+          </li>
+          <li>
+            <a href="https://apps.apple.com/jp/app/expo-2025-visitors/id6511230177" target="_blank" rel="noopener">
+              <h3>公式アプリ (iOS)</h3>
+            </a>
+          </li>
+          <li>
+            <a href="https://play.google.com/store/apps/details?id=or.jp.expo2025.visitors" target="_blank" rel="noopener">
+              <h3>公式アプリ (Android)</h3>
+            </a>
+          </li>
+        </ul>
+      </details>
+    </section>
+
+    <section>
+      <details>
+        <summary><h2>役立ち情報</h2></summary>
+        <ul>
+          <li>
+            <a href="https://www.expo2025.or.jp/" target="_blank" rel="noopener">
+              <h3>公式サイト</h3>
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/t_tsuji/status/1917597008988365042" target="_blank" rel="noopener">
+              <h3>非公式会場マップ</h3>
+            </a>
+            <p>事前に印刷すると便利</p>
+          </li>
+          <li>
+            <a href="https://scrapbox.io/funwarioisii/大阪万博2025の予習・準備" target="_blank" rel="noopener">
+              <h3>大阪万博2025の予習・準備</h3>
+            </a>
+            <p>本ページ作者が準備中に調査したメモ</p>
+          </li>
+        </ul>
+      </details>
+    </section>
+  </main>
+  <footer>
+    <p><a href="https://www.expo2025.or.jp/" target="_blank" rel="noopener">公式サイトはこちら</a></p>
+  </footer>
+</body>
+</html>
