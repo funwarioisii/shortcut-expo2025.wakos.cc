@@ -99,6 +99,12 @@
       padding: 0;
       white-space: nowrap;
     }
+
+    .page-description {
+      margin-top: .5rem;
+      margin-bottom: 1rem;
+      font-size: 0.9em;
+    }
     
     @media (max-width: 600px) {
       .header-title {
@@ -237,56 +243,11 @@
       padding-bottom: 1rem;
     }
     
-    .mascot-container {
-      display: flex;
-      justify-content: center;
-      margin: 1rem 0 2rem 0;
-      position: relative;
-    }
-    
-    .mascot-img {
-      width: 100px;
-      height: auto;
-      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
-      animation: float 3s ease-in-out infinite;
-    }
-    
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
-      100% { transform: translateY(0px); }
-    }
-    
-    .bubble {
-      position: absolute;
-      background: var(--expo-white);
-      border-radius: 20px;
-      padding: 0.8rem 1.2rem;
-      max-width: 200px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-      top: 0;
-      left: 50%;
-      transform: translateX(20px);
-      font-size: 0.9rem;
-      color: var(--expo-font);
-      border-left: 3px solid var(--expo-blue);
-    }
-    
-    .bubble::after {
-      content: '';
-      position: absolute;
-      left: -10px;
-      top: 15px;
-      border-top: 8px solid transparent;
-      border-right: 10px solid var(--expo-white);
-      border-bottom: 8px solid transparent;
-    }
-    
     footer {
       margin-top: auto;
       width: 100%;
       background-color: var(--expo-gray);
-      padding: 1rem;
+      padding: 1.5rem 1rem;
       text-align: center;
       font-size: 0.8rem;
       color: var(--expo-blue);
@@ -296,10 +257,17 @@
     footer a {
       color: var(--expo-blue);
       text-decoration: none;
+      font-weight: 500;
     }
     
     footer a:hover {
       text-decoration: underline;
+    }
+    
+    .copyright {
+      margin-top: 0.5rem;
+      font-size: 0.75rem;
+      color: #666;
     }
     
     @media (max-width: 600px) {
@@ -338,16 +306,6 @@
       details p::before {
         font-size: 0.8rem;
       }
-      
-      .mascot-img {
-        width: 80px;
-      }
-      
-      .bubble {
-        max-width: 180px;
-        font-size: 0.8rem;
-        transform: translateX(10px);
-      }
     }
   </style>
 </head>
@@ -356,6 +314,11 @@
     <h1 class="header-title">関西・大阪万博2025 <span class="short">ショートカット</span></h1>
   </header>
   <main>
+    <p class="page-description">
+      万博2025（大阪・関西万博）にこれから行く人・今日行く人のための便利リンク集です。<br />
+      ホーム画面に追加したり、ブックマークしてご利用ください。
+    </p>
+    
     <section>
       <details>
         <summary><h2>当日</h2></summary>
@@ -439,7 +402,10 @@
     </section>
   </main>
   <footer>
-    <p><a href="https://www.expo2025.or.jp/" target="_blank" rel="noopener">公式サイトはこちら</a></p>
+    <p>
+      <a href="https://www.expo2025.or.jp/" target="_blank" rel="noopener">公式サイトはこちら</a> | 
+      <a href="https://github.com/funwarioisii/shortcut-expo2025.wakos.cc" target="_blank" rel="noopener">GitHub</a>
+    </p>
   </footer>
 </body>
 </html>
