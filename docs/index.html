@@ -94,6 +94,25 @@
       background: var(--expo-red);
     }
     
+    .header-title {
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+    }
+    
+    @media (max-width: 600px) {
+      .header-title {
+        font-size: 0.9em;
+        white-space: normal;
+        display: inline-block;
+        line-height: 1.4;
+      }
+      
+      .header-title .short {
+        display: inline-block;
+      }
+    }
+    
     main {
       width: 100%;
       max-width: 560px;
@@ -286,7 +305,8 @@
     @media (max-width: 600px) {
       header {
         font-size: 1.3rem;
-        padding: 1.2rem 0 1rem 0;
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+        line-height: 1.3;
       }
       
       main {
@@ -333,7 +353,7 @@
 </head>
 <body>
   <header>
-    関西・大阪万博2025 ショートカット<br>
+    <h1 class="header-title">関西・大阪万博2025 <span class="short">ショートカット</span></h1>
   </header>
   <main>
     <section>
